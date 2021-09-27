@@ -1,0 +1,13 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    user-select: none;
+    overflow-x: hidden;
+}
