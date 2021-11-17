@@ -1,13 +1,14 @@
-let btn = document.getElementById('btn')
-let clsLst = document.getElementById('main')
-let lgtThm = 'theme-light'
+let lgtThm = "lightTheme";
+let nrmThm = "normalTheme";
 
 let changeColor = () => {
-    if (clsLst.classList.contains(lgtThm)) {
-        clsLst.classList.remove(lgtThm)
-    } else {
-        clsLst.classList.add(lgtThm)
-    }
-}
+  if (document.getElementById("main").classList.contains(lgtThm)) {
+    document.getElementById("main").classList.remove(lgtThm);
+    document.getElementById("main").classList.add(nrmThm);
+  } else {
+    document.getElementById("main").classList.add(lgtThm);
+    document.getElementById("main").classList.remove(nrmThm);
+  }
+};
 
-btn.addEventListener('click', changeColor)
+document.getElementById("btn").addEventListener("click", changeColor);
