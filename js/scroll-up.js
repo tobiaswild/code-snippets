@@ -1,6 +1,10 @@
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+window.onload = function () {
+    let ele = document.getElementById('top')
 
-document.getElementById("top").addEventListener("click", topFunction());
+    function topFunction() {
+        document.body.scrollTop = 0
+        document.documentElement.scrollTop = 0
+    }
+
+    ele.addEventListener('click', topFunction())
+}
